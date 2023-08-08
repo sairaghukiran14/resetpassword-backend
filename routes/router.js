@@ -135,7 +135,7 @@ router.post("/sendpasswordlink", async (req, res) => {
     );
     if (setusertoken) {
       const mailOptions = {
-        from: "dharani94667@gmail.com", // sender address
+        from: "lovelyraghucr7@gmail.com", // sender address
         to: req.body.email, // list of receivers
         subject: "Password Reset Link", // Subject line
         text: `This link is valid for 2 minutes https://resetpassword-frontend.vercel.app/forgotpassword/${finduser._id}/${setusertoken.verifytoken}`,
